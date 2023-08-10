@@ -1,0 +1,4 @@
+To deploy a pod
+
+
+kubectl run nginx-pod --image=nginnx:alpine
