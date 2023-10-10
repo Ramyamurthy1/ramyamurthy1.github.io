@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="heading-one-docs"> How to delete a file from AWS Code Commit </h1>
+
+    <div class="front-images">
+           <img  src="../images/delete_file.avif" alt="delete_file">
+
+           <p class="paragraph" > 
+                Deleting a file is not easy or straight forward job. It can cause a permanent data loss situation. AWS 
+                provides extra checks to make sure you know what you are doing.
+                
+
+                The below code explains how to delete a file from AWS Code Commit repository. 
+                
+                You can use AWS CLI to perform these steps. 
+
+                First, get the Code Commit repository Commit id. This will give us the repository commit details. 
+                This can help identify the changes made, which include,
+            </p>
+
+            <p>
+                <ul class="para-list">
+                    <li> When and who made the change </li>
+                    <li> When the commits were merged to the branch</li>
+                </ul>
+            </p>
+
+            <p class="paragraph">
+                To get the commit id run the below command, 
+
+            </p>
+
+            <pre>
+                <code>
+                   aws codecommit get-branch --repository-name SampleRepo --branch-name test-branch <br>
+                </code>
+            </pre>
+
+            <p class="paragraph">The out Sample Output:</p>
+
+            <pre>
+                <code>
+                    
+                    {
+                        "branch": {
+                                    "branchName": "main",
+                                    "commitId": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+                                  }
+                    } 
+                </code>
+            </pre>
+
+            <p class="paragraph">
+                    The comminId describes the full SHA ID of the specified commit. The commit id is then provided to actually delete 
+                    file. 
+
+            </p>
+
+            <pre>
+                <code>
+                    aws codecommit delete-file --repository-name SampleRepo --branch-name test-branch --file-path file-path --parent-commit-id xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+                </code>
+            </pre>
+
+
+            </p>
+                
+            
+              
+
+
+
+
+        </p>
+    </div>  
+    
+    
+</body>
+</html>

@@ -1,0 +1,103 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;1,900&display=swap');
+h1,h2,h3 {
+    font-family:'Courier New', Courier, monospace ;
+}
+
+h1 {
+    color: rgb(17, 0, 255);
+    font-size: 40px;
+     text-transform: capitalize;
+    font-style: italic;
+}
+
+h2 {
+    color: pink;
+    font-size: 50px;
+    font-family: 
+}
+
+p {
+    color: black;
+    font-size: 20px;
+    font-family: cursive;
+    line-height: 1.5;
+}
+    
+li {
+    color: blueviolet;
+    
+    font-size: 20px;
+}
+
+footer p{
+    color: blue;
+    font-size: 15px;
+    font-family:'Courier New', Courier, monospace ;
+    
+}
+
+header p {
+    font-style: italic;
+}
+
+header nav {
+    font-size: 25px;
+    font-style: oblique;
+}
+
+img {
+    height: 100px;
+}
+
+article a {
+    font-size: 20px;
+}
+
+#author {
+    color: brown;
+}
+
+#copyright {
+    color:chocolate ;
+}
+
+.intial-points {
+    color: chartreuse;
+}
+
+ul {
+    list-style:disc
+}
+
+li:first-child {
+    color: crimson;
+}
+
+li::first-letter {
+    color:tomato;
+}
+
+li:nth-child(3) {
+    color: rgb(54, 42, 165);
+}
+ /* Styling hyperlinks */
+
+ a:link {
+    color: aqua;
+    text-decoration: none;
+ }
+
+ a:visited {
+    color: yellow;
+ }
+
+a:hover{
+    color: orangered;
+    font-weight: bolder;
+    text-decoration:wavy;
+}
+
+a:active {
+    background-color: black;
+}

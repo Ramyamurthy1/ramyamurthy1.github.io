@@ -1,0 +1,149 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Qwitcher+Grypen:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&family=Qwitcher+Grypen:wght@700&family=Rubik+Iso&display=swap');
+
+body {
+    background-color:rgb(238, 245, 230) ;
+    
+    
+}
+
+.heading-one {
+    color: black;
+    font-family: 'Gill Sans';
+    align-items: center;
+    text-align: center;
+    font-size: 100px;
+    font-family: 'Qwitcher Grypen', cursive;    
+    
+}
+
+
+
+a:link {
+    color: rgb(241, 247, 240);
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 50px;
+    justify-content: space-evenly;
+    margin: 40px;
+    padding: 20px;
+    font-family: 'Cormorant Garamond', serif; ;
+    
+    
+    
+
+
+}
+
+
+#cloud {
+    background-image: url(../images/cloud.jpg);
+    justify-content: center;
+    background-size: cover;
+}
+
+#dev {
+    background-image: url(../images/development.jpg);
+    justify-content: center;
+    background-size: cover;
+   
+}
+
+#devops {
+    background-image: url(../images/devops.avif);
+
+}
+
+#gitops {
+    background-image: url(../images/Codefresh-GitOps.jpg);
+}
+
+.front-images {
+    display: block;
+    height: 100px;
+    width: 100%;
+    margin: auto;
+    margin-left: auto;
+    text-align: left;
+    background-size: 100% 100%;
+    background-size: cover;
+}
+
+.paragraph {
+    font-size: 18px;
+    line-height: 30px;
+    font-family: serif;
+}
+
+.para-list {
+    font-size:  18px;
+}
+
+#commands-para {
+    font-size: 18px;
+    border:black;
+
+
+
+}
+
+p {
+    font-size: 20px;
+    line-height: 30px;
+    font-family: serif;   
+}
+
+
+#Documentations {
+    border-style: solid; 
+    margin-left: 10px;
+}
+
+#para-docs {
+    margin-left: 20px;
+}
+
+#footer {
+    color: blue;
+    font-size: 10px;
+    font-family:'Courier New', Courier, monospace ;
+}
+
+
+.commands-para {
+    color: rgb(33, 2, 147);
+    border-style:inset;
+    border-color: rgb(33, 2, 147);
+    border-width: 1px;
+    margin-left: 10px;
+    text-indent: 10px;
+    background-color: #eee;
+    font-size: 18px;
+    font-family: monospace;
+}
+
+.break-point::before {
+    content: "hiddentext";
+    white-space: pre;
+}
+
+pre code {
+    background-color: #eee;
+    border: 1px solid #999;
+    display: block;
+    padding: 0px;
+    font-family: monospace;
+    font-size: 15px;
+    margin-left: 0px;
+    text-indent: 0px;
+    color: rgb(0, 0, 0);
+    border-style:inset;
+    border-color: rgb(0, 0, 0);
+
+  
+  }
+
+
