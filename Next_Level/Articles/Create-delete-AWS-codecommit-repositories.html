@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Create or Delete AWS code commit repo</title>
+</head>
+<body>
+    <h1 class="heading-one-docs"> How to create or delete AWS code commit repository </h1>
+    <div class="front-images">
+        <img  src="../images/create-repo.png" alt="create_file">
+    <p class="paragraph" > 
+        You could easily create a code commit reposirtory, provided you have right permissions. However, deleteing the reposirtory may need special permissions.
+        You can you the AWS CLI to create the repository.
+
+        <pre>
+            <code>
+                aws codecommit create-repository --repository-name Hotspot
+
+            </code>
+        </pre>
+    </p>    
+    </div> 
+</body>
+
+</html>
